@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #6c757d; /* Usando a cor secondary do Bootstrap 5 */
+            }
+            .navbar {
+                margin-bottom: 10px; /* Margem de 10 pixels abaixo da navbar */
+            }
+            .carousel-container {
+                background-color: #000; /* Fundo preto para o carrossel */
+                padding: 10px 0; /* Padding para adicionar espaço ao redor do carrossel */
+            }
+            .carousel-inner {
+                height: 80vh; /* Aumenta a altura do carrossel */
+            }
+            .carousel-item img {
+                max-height: 80vh; /* Ajusta a altura máxima da imagem para o mesmo valor */
+                object-fit: cover;
+                width: 100%; /* Garante que a imagem preencha a largura do carrossel */
+            }
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com opacidade para a descrição */
+                color: #fff; /* Texto branco para contraste */
+                padding: 20px;
+                border-radius: 5px;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para as setas de controle */
+            }
+        </style>
+    </head>
+    <body class="bg-secondary">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <!-- Colocar logo -->
+             <h2 class="title_navbar">MyProfile™</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projetos.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Carrossel -->
+        <div class="carousel-container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/logo1.png" class="d-block w-100" alt="Python">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Python</h5>
+                            <p>Python é uma linguagem de programação de alto nível, amplamente utilizada para desenvolvimento web, ciência de dados, aprendizado de máquina e automação. Sua sintaxe simples e legível facilita o aprendizado e a manutenção de código.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/logo2.png" class="d-block w-100" alt="Java">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Java</h5>
+                            <p>Java é uma linguagem de programação orientada a objetos conhecida por sua portabilidade, robustez e segurança. É amplamente utilizada no desenvolvimento de aplicativos empresariais, Android e sistemas de grande escala devido à sua compatibilidade multiplataforma.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/logo3.png" class="d-block w-100" alt="JavaScript">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>JavaScript</h5>
+                            <p>JavaScript é uma linguagem de programação que permite a criação de interatividade em páginas web. É essencial para o desenvolvimento de front-end e, com frameworks como Node.js, também é usado no back-end, facilitando a criação de aplicativos web dinâmicos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/logo4.png" class="d-block w-100" alt="HTML">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>HTML</h5>
+                            <p>HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar conteúdos na web. Utilizado para definir a estrutura e o layout de páginas web com elementos como cabeçalhos, parágrafos, links e imagens.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/logo5.png" class="d-block w-100" alt="CSS">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>CSS</h5>
+                            <p>CSS (Cascading Style Sheets) é usado para estilizar e formatar documentos HTML. Ele controla a aparência de páginas web, permitindo a definição de layouts, cores, fontes e outros aspectos visuais para criar uma experiência de usuário atraente e coesa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/logo6.png" class="d-block w-100" alt="Banco de Dados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Banco de Dados</h5>
+                            <p>Banco de Dados são sistemas usados para armazenar e gerenciar dados de forma eficiente. O MySQL é um sistema de gerenciamento de banco de dados relacional que permite a criação, leitura, atualização e exclusão de dados de maneira segura e estruturada.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <footer class="bg-dark-subtle text-black text-center py-4">
+            <!-- place footer here -->
+            <div class="container">
+                <p> &copy; 2024 Meu portfólio - Todos direitos Reservados</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-black-50"> Política de Privacidade </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-black-50"> Termos de Uso </a>
+                    </li>
+                </ul>
+            <div class="social-icons mt-3">
+                <a href="a" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="a" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="a" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="a" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            </div>
+
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
